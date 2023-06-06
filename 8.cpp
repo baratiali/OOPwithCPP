@@ -12,24 +12,10 @@ class Human {
 
     public:
         //Constructors
-        Human(){
-            cout << "default constructor" << endl;
-            name = "noname";
-            age = 0;
-        }
-        Human(string inputName){
-            cout << "constructor with name as the parameter" << endl;
-            name = inputName;
-            age = 0;
-        }
-        Human(int inputAge){
-            cout << "constructor with age as the parameter" << endl;
-            name = "noname";
-            age = inputAge;
-        }
 
-        Human(int inputAge, string inputName){
-            cout << "constructor with age and name as the parameters" << endl;
+
+        Human(string inputName = "noname" , int inputAge = 0){
+            cout << "overloaded constructor" << endl;
             name = inputName;
             age = inputAge;
         }
@@ -45,14 +31,11 @@ int main() {
     Human Eva;
     Eva.display();
 
-    Human Adam("Adam");
-    Adam.display();
-
-    Human John(40);
-    John.display();
-
-    Human Sara(40, "Sara");
+    Human Sara("Sara");
     Sara.display();
+
+    Human Abrahm("Abrahm", 35);
+    Abrahm.display();
 
     return 0;
 }
