@@ -6,22 +6,17 @@
 using namespace std;
 
 class Human {
-
     private:
         string name;
         int age;
 
-
     public:
-
-
         //Constructors
         Human(string iname, int iage){
             name = iname;
             age = iage;
-
         }
-
+        //destructor
         ~Human(){
         }
         
